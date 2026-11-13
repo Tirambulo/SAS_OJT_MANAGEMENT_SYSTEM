@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAS OJT Management System - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <div class="login-header">
+            <h2>SAS OJT Portal</h2>
+            <p>Student Affairs and Services · On-the-Job Training</p>
+        </div>
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" required>
+            </div>
+            <p id="formNotice" class="form-notice" hidden></p>
+            <p id="errorMsg" class="form-error" hidden role="alert"></p>
+            <button type="submit" class="btn-primary">Sign In</button>
+        </form>
+        <div class="login-footer">
+            <a href="register.html">Create an Account</a> | <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

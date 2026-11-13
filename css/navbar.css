@@ -1,0 +1,82 @@
+.topbar {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    min-height: 66px;
+    padding: 10px clamp(16px, 3vw, 30px);
+    background: rgb(255 255 255 / 96%);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(12px);
+}
+
+.topbar-title {
+    margin-right: auto;
+    color: #334155;
+    font-size: .9rem;
+    font-weight: 650;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-button,
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-button {
+    color: #334155;
+    background: #f1f5f9;
+}
+
+.btn-quiet {
+    color: #334155;
+    background: white;
+    border-color: #cbd5e1;
+}
+
+.btn-secondary {
+    color: #334155;
+    background: white;
+    border-color: #cbd5e1;
+}
+
+.btn-small {
+    min-height: 30px;
+    padding: 5px 8px;
+    color: #1e40af;
+    background: #eff6ff;
+    border-color: #dbeafe;
+    font-size: .78rem;
+}
+
+.btn:hover,
+.icon-button:hover {
+    filter: brightness(.97);
+}
+
+.btn:disabled {
+    opacity: .55;
+    cursor: not-allowed;
+}
+
+.menu-toggle {
+    display: none;
+}
